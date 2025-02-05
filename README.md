@@ -93,6 +93,7 @@ Despite the limit, **Bitcoin is divisible**, meaning small fractions (satoshis) 
 | Transaction Speed | ~10 min per block | ~15 sec per block |
 | Smart Contracts | No | Yes |
 
+(Platfoems like Solana offer smart contact features for the blockchain frameworks.)
 ### **Bitcoin vs. Other Cryptos**
 - **Litecoin (LTC)**: Faster version of Bitcoin with 2.5-minute blocks.
 - **Ripple (XRP)**: Centralized for fast bank transactions.
