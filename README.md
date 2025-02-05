@@ -33,8 +33,9 @@ To maintain ledger consistency, Bitcoin employs a **proof-of-work system** where
 2. Miners **try different numbers (nonces)**, such as `1073765433`, to see which input produces the required hash.
 3. Since SHA-256 is a one-way function, even a tiny change in the input drastically changes the hash, making it a computationally **difficult problem** to solve.
 4. The first miner to find a valid hash **adds the new block** to the blockchain.
-5. The miner receives a reward in **Bitcoin**, which is how new BTC enters circulation.
-6. Since Bitcoin has a fixed cap of **21 million coins**, its scarcity makes it more valuable (similar to gold). 
+5. People can use this block for verified transaction through them. (This is also verifying thorugh this block takes ~10mins for bitcoins --> Solved by etherium)
+6. The miner receives a reward in **Bitcoin**, which is how new BTC enters circulation.
+7. Since Bitcoin has a fixed cap of **21 million coins**, its scarcity makes it more valuable (similar to gold). 
 
 Currently, **1 BTC ≈ $98,000 USD** and **1 BTC = 100M Satoshis**.
 
