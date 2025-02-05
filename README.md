@@ -1,7 +1,42 @@
 # Bitcoin Explained - README
 
 ## Introduction
-Bitcoin is a decentralized digital currency that operates without a central authority. It was created by **Satoshi Nakamoto** in 2009 as an alternative to traditional financial systems. Unlike fiat currencies, Bitcoin is based on blockchain technology and operates on a peer-to-peer network.
+Bitcoin is a decentralized digital currency that operates without a central authority. It was created by **Satoshi Nakamoto** (supposedly) in 2009 as an alternative to traditional financial systems. Unlike fiat currencies, Bitcoin is based on blockchain technology and operates on a peer-to-peer network.
+
+Bitcoin functions as a **decentralized ledger** where transactions are updated by participants and must be reflected correctly for all. The main challenge in this system is ensuring **security and consensus**, which is achieved through:
+
+---
+
+## a. Digital Signatures
+
+![credit: 3Blue1Brown](image.png)  
+(credits: 3Blue1Brown)
+
+Each transaction is **digitally signed** using a **private key**. This ensures that only the rightful owner can authorize a transaction. The public key allows others to **verify** the transaction's authenticity. Each ledger entry can include a unique serial number to prevent duplication.
+
+---
+
+## b. Cryptographic Hash Functions (SHA-256)
+
+Another challenge is ensuring that all participants have **identical copies of the ledger**. 
+
+![alt text](image-1.png)  
+(credits: 3Blue1Brown)
+
+To maintain ledger consistency, Bitcoin employs a **proof-of-work system** where miners solve cryptographic puzzles using the SHA-256 algorithm. 
+
+![alt text](image-2.png)  
+(credits: 3Blue1Brown)
+
+### How Mining Works
+1. The SHA-256 algorithm requires miners to find a **valid hash** with a specified number of leading zeros (e.g., 30 zeros).
+2. Miners **try different numbers (nonces)**, such as `1073765433`, to see which input produces the required hash.
+3. Since SHA-256 is a one-way function, even a tiny change in the input drastically changes the hash, making it a computationally **difficult problem** to solve.
+4. The first miner to find a valid hash **adds the new block** to the blockchain.
+5. The miner receives a reward in **Bitcoin**, which is how new BTC enters circulation.
+6. Since Bitcoin has a fixed cap of **21 million coins**, its scarcity makes it more valuable (similar to gold). 
+
+Currently, **1 BTC ≈ $98,000 USD** and **1 BTC = 100M Satoshis**.
 
 ---
 
@@ -16,17 +51,21 @@ However, mining is **essential for the network** as it validates transactions an
 
 ---
 
-## 2. How Can Bitcoin Be Used as a Currency?
-Bitcoin can function as a currency because:
-- **Limited Supply:** Unlike fiat money, Bitcoin has a maximum cap of **21 million coins**, ensuring scarcity.
-- **Peer-to-Peer Transactions:** No intermediaries, allowing direct transactions.
-- **Decentralization:** No government or entity controls it.
-- **Divisibility:** Bitcoin is divided into **100 million satoshis**, enabling microtransactions.
+## 2. Bitcoin as an Asset vs. a Currency
+While Bitcoin was originally designed to function as a **digital currency**, it is primarily used today as a **store of value** (similar to gold) rather than for daily transactions.
 
-**Challenges:**
-- High volatility.
-- Slow transactions without second-layer solutions.
-- Limited adoption.
+### **Why is Bitcoin Used as an Asset?**
+- **High Volatility**: Frequent price swings make it difficult to use as a stable currency.
+- **Slow Transaction Times**: Compared to traditional payment methods, Bitcoin transactions take longer to confirm.
+- **Scarcity**: With only **21 million BTC**, many investors see Bitcoin as a **long-term investment** rather than everyday money.
+
+### **What is the Use of Buying Bitcoin?**
+- **Investment**: Many people buy Bitcoin as a hedge against inflation.
+- **Decentralized Finance (DeFi)**: Some platforms allow users to stake or lend Bitcoin for passive income.
+- **NFTs & Crypto Art**: Bitcoin isn't commonly used for NFTs, but blockchain technology enables digital ownership of assets (Ethereum is more dominant here).
+- **Borderless Payments**: Bitcoin enables fast international transactions without the need for intermediaries.
+
+While Bitcoin is not widely used for daily transactions yet, **Layer 2 solutions** (like the Lightning Network) aim to improve speed and lower transaction fees.
 
 ---
 
@@ -42,87 +81,25 @@ Despite the limit, **Bitcoin is divisible**, meaning small fractions (satoshis) 
 
 ---
 
-## 4. Role of Bitcoin Miners - Security & SHA-256
-### What do miners do?
-- Miners **validate transactions** by solving complex cryptographic puzzles.
-- They compete to **find a valid SHA-256 hash**.
-- The first miner to solve it gets to add a block to the blockchain and receives a **reward**.
+## 4. Bitcoin vs. Ethereum vs. Other Cryptocurrencies
 
-### Why Mining is Secure:
-- Prevents **double spending**.
-- Decentralized network ensures **no single point of failure**.
-- Proof-of-Work (PoW) requires significant computational power, making attacks impractical.
+### **Bitcoin vs. Ethereum**
+| Feature           | Bitcoin (BTC)  | Ethereum (ETH)  |
+|------------------|---------------|----------------|
+| Purpose         | Digital Gold, Store of Value | Smart Contracts, dApps |
+| Supply Limit    | 21 Million BTC | No Fixed Limit |
+| Consensus Mechanism | Proof-of-Work (PoW) | Transitioning to Proof-of-Stake (PoS) |
+| Transaction Speed | ~10 min per block | ~15 sec per block |
+| Smart Contracts | No | Yes |
 
----
-
-## 5. How Much is 1 Satoshi Worth in USD?
-1 Bitcoin = 100,000,000 satoshis.
-- If Bitcoin’s price is **$98,236**, then:
-  - 1 Satoshi ≈ **$0.00098236**
-- The value fluctuates based on market prices.
+### **Bitcoin vs. Other Cryptos**
+- **Litecoin (LTC)**: Faster version of Bitcoin with 2.5-minute blocks.
+- **Ripple (XRP)**: Centralized for fast bank transactions.
+- **Cardano (ADA)**: Uses PoS for better efficiency.
 
 ---
 
-## 6. How is Bitcoin Measured in Dollars?
-Bitcoin’s price is determined by **supply and demand** on cryptocurrency exchanges.
-
-### How it works:
-1. People **buy and sell Bitcoin** on exchanges like Binance, Coinbase, and Kraken.
-2. If demand increases, **price goes up**. If demand falls, **price goes down**.
-3. Price is quoted in fiat pairs (BTC/USD, BTC/EUR, etc.).
-
-Bitcoin is not tied to any government or central authority, meaning its price is purely **market-driven**.
-
----
-
-## 7. Can Bitcoin Be a Global Currency?
-### Challenges:
-- **Fixed Supply:** Only 21M coins.
-- **Volatility:** Prices fluctuate too much.
-- **Government Opposition:** Many nations rely on fiat control.
-- **Slow Transactions:** Base layer transactions take time.
-
-### Possible Solutions:
-- **Lightning Network** for faster, cheaper transactions.
-- **Bitcoin as a reserve currency** (similar to gold).
-- **Bitcoin-backed stablecoins** to balance volatility.
-
-While Bitcoin may not replace traditional currencies, it could serve as a **global digital asset** for transactions and wealth storage.
-
----
-
-## 8. Why Are Some Groups Against Bitcoin?
-### 1. Governments & Central Banks 🏦❌
-- Lose **monetary control** if Bitcoin replaces fiat.
-- Harder to **regulate transactions & taxes**.
-- Fear of **capital flight & financial instability**.
-
-### 2. Traditional Banks 💳❌
-- Bitcoin **removes middlemen**, making banks less relevant.
-- Transactions **don’t require banks**.
-
-### 3. Environmental Concerns 🌍🔥
-- **Mining uses huge amounts of electricity**.
-- Critics say it contributes to **carbon emissions**.
-- Some mining operations are shifting to **renewable energy**.
-
-### 4. Volatility & Risk 📉⚠️
-- Prices fluctuate unpredictably.
-- Many investors suffer **big losses**.
-- Not ideal for **everyday payments**.
-
-### 5. Criminal Activity Concerns 🕵️‍♂️💰
-- Bitcoin can be used for **money laundering & illegal transactions**.
-- **Counterpoint:** Fiat (cash) is used more for crime than Bitcoin.
-
-### 6. "Bitcoin is a Bubble" Argument 💥💸
-- Critics compare Bitcoin to **the dot-com bubble** or **Tulip Mania**.
-- Some believe it has **no intrinsic value**.
-- Supporters argue that **Bitcoin is the future of finance**.
-
----
-
-## 9. Conclusion
+## 5. Conclusion
 Bitcoin is a revolutionary technology that challenges the traditional financial system. While it faces **scalability, volatility, and adoption challenges**, it is also seen as a **digital store of value** and a **potential global financial asset**.
 
 **What’s Next?**
@@ -131,4 +108,3 @@ Bitcoin is a revolutionary technology that challenges the traditional financial 
 - Wider adoption as a **store of value or global reserve currency**.
 
 Bitcoin may not **replace fiat** anytime soon, but it has already changed the way people think about money. 🚀🔗
-
