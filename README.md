@@ -12,7 +12,7 @@ Bitcoin functions as a **decentralized ledger** where transactions are updated b
 ![credit: 3Blue1Brown](image.png)  
 (credits: 3Blue1Brown)
 
-Each transaction is **digitally signed** using a **private key**. This ensures that only the rightful owner can authorize a transaction. The public key allows others to **verify** the transaction's authenticity. Each ledger entry can include a unique serial number to prevent duplication.
+Each transaction is **digitally signed** using a **private key** (can be handled by you by storing it in a harddrive, etc.. or can be handled by wallets like coinbase). This ensures that only the rightful owner can authorize a transaction. The public key allows others to **verify** the transaction's authenticity. Each ledger entry can include a unique serial number to prevent duplication.
 
 ---
 
